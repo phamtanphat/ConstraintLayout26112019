@@ -9,6 +9,7 @@
 <!--    Xac dinh vi tri theo parent-->
 
     <TextView
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toLeftOf="@id/tvView2"
