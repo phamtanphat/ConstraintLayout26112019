@@ -15,6 +15,82 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_width="0dp"
         android:layout_height="0dp">
+        <TextView
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="Chào mừng bạn đến với lập trình"
+            android:id="@+id/tvTitle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/group1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/group2"
+            android:id="@+id/group1"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/tvView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tên : "
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/tvView2"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="Lập trình android"
+                app:layout_constraintLeft_toRightOf="@id/tvView1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/group1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/group2"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/tvView3"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="Ngôn ngữ : "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"/>
+            <TextView
+                android:id="@+id/tvView4"
+                android:gravity="start|center"
+                android:textSize="25sp"
+                android:text="Java cơ bản"
+                app:layout_constraintLeft_toRightOf="@id/tvView3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
